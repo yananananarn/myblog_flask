@@ -1,4 +1,3 @@
-from re import A
 from flask import Flask
 from flask import render_template
 
@@ -10,19 +9,10 @@ from flask import render_template
 #インスタンス化
 app = Flask(__name__)
 
-bullets={
-    "箇条書き1",
-    "箇条書き2",
-    "箇条書き3",
-    "箇条書き4",
-    "箇条書き5",
-    "箇条書き6"
-}
-
 #ルートページ
 @app.route("/")
-def hello_yana():
-    return render_template("index.html", bullets=bullets)
+def index():
+    return render_template("index.html")
 
 #可変のURL
 @app.route("/<name>")

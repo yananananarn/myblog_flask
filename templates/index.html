@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yanarn blog</title>
-</head>
-<body>
-    <h1>yanaさん、こんにちは！</h1>
-    <ul>
-        {% for bullet in bullets: %}
-            <li>{{ bullet }}</li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>ブログアプリ</h1>
+<article>
+    <h2>記事1</h2>
+    <p>作成日時：2022/7/28 02:14</p>
+    <p>今日はFlaskにてアプリケーションを作成しました。</p>
+</article>
+<article>
+    <h2>記事2</h2>
+    <p>作成日時：2022/7/28 08:40</p>
+    <p>enPitの4日目が始まるぜ☆彡</p>
+</article>
+{% endblock %}
