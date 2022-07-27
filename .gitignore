@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-venv/
-=======
-#Pipfile.lock
-=======
 # Created by https://www.toptal.com/developers/gitignore/api/windows,python,flask,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,python,flask,visualstudiocode
->>>>>>> f75730b (gitignoreの変更)
 
 ### Flask ###
 instance/*
@@ -307,9 +300,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-<<<<<<< HEAD
-# End of https://www.toptal.com/developers/gitignore/api/windows,flask,python
->>>>>>> 4b58dfd (.gitignore)
-=======
 # End of https://www.toptal.com/developers/gitignore/api/windows,python,flask,visualstudiocode
->>>>>>> f75730b (gitignoreの変更)
