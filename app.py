@@ -58,6 +58,15 @@ def update(id):
         db.session.commit()
         return redirect("/")
 
+#削除
+@app.route("/<int:id>/delete", methods=['GET','POST'])
+def delete(id):
+    post = Post.query.get(id)
+
+    db.session.delete(post)
+    db.session.commit()
+    return redirect("/")
+
 #可変のURL
 """
 @app.route("/unchi/<name>")
